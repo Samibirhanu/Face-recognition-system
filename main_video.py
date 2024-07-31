@@ -3,10 +3,10 @@ from simple_facerec import SimpleFacerec
 
 # Encode faces from a folder
 sfr = SimpleFacerec()
-sfr.load_encoding_images("/home/samuel/pythonPakage/path/to/venv/Face-recognition-working/images")
+sfr.load_encoding_images("/home/samuel/repos/Face-recognition-system/images")
 
 # Load Camera
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # Check if camera opened successfully
 if not cap.isOpened():
